@@ -58,7 +58,7 @@ function Feedback() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {feedbacks.map((f) => (
               <div key={f._id} className="glass-panel" style={{ padding: '1.5rem', display: 'flex', gap: '1rem' }}>
-                <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(0,0,0,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
                   <User size={20} />
                 </div>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

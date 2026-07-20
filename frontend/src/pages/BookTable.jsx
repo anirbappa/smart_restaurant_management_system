@@ -98,7 +98,7 @@ function BookTable() {
 
             {/* Simulated stage/door */}
             <div style={{
-              background: 'rgba(255,255,255,0.03)',
+              background: 'rgba(0,0,0,0.03)',
               border: '1px solid var(--border-color)',
               borderRadius: '4px',
               padding: '8px',
@@ -130,9 +130,9 @@ function BookTable() {
                       width: '75px',
                       height: '75px',
                       borderRadius: table.capacity === 6 ? '12px' : '50%',
-                      background: isSelected ? 'var(--color-primary)' : 'rgba(255, 255, 255, 0.04)',
-                      color: isSelected ? 'var(--text-dark)' : 'white',
-                      border: isSelected ? '2px solid white' : '1px solid var(--border-color)',
+                      background: isSelected ? 'var(--color-primary)' : 'rgba(0, 0, 0, 0.04)',
+                      color: isSelected ? 'var(--text-dark)' : 'var(--text-main)',
+                      border: isSelected ? '2px solid var(--color-primary)' : '1px solid var(--border-color)',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
@@ -159,7 +159,7 @@ function BookTable() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
               <div style={{ display: 'flex', gap: '15px' }}>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border-color)' }}></span>
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: 'rgba(0,0,0,0.04)', border: '1px solid var(--border-color)' }}></span>
                   Available
                 </span>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
@@ -253,7 +253,7 @@ function BookTable() {
                   </label>
                   <select
                     className="form-control"
-                    style={{ background: '#111827' }}
+                    style={{ background: 'var(--bg-main)' }}
                     value={timeSlot}
                     onChange={(e) => setTimeSlot(e.target.value)}
                   >

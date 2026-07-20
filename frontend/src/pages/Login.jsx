@@ -106,7 +106,7 @@ function Login() {
         <div style={{
           marginTop: '2rem',
           padding: '1rem',
-          background: 'rgba(255, 255, 255, 0.02)',
+          background: 'rgba(0, 0, 0, 0.02)',
           borderRadius: 'var(--radius-sm)',
           border: '1px solid var(--border-color)',
           fontSize: '0.8rem',

@@ -136,7 +136,7 @@ function AdminDashboard() {
         </div>
 
         {/* Tab Selectors */}
-        <div style={{ display: 'flex', gap: '6px', background: 'rgba(255,255,255,0.02)', padding: '4px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+        <div style={{ display: 'flex', gap: '6px', background: 'rgba(0,0,0,0.02)', padding: '4px', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
           {[
             { id: 'analytics', label: 'Analytics' },
             { id: 'kds', label: 'Kitchen KDS' },
@@ -256,7 +256,7 @@ function AdminDashboard() {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {orders.filter(o => o.status === 'Pending').map(order => (
-                <div key={order._id} style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                <div key={order._id} style={{ background: 'rgba(0,0,0,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
                     <span>#{order._id.substring(18)}</span>
                     <span>{order.diningOption} {order.tableNumber ? `(T-${order.tableNumber})` : ''}</span>
@@ -282,7 +282,7 @@ function AdminDashboard() {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {orders.filter(o => o.status === 'Preparing').map(order => (
-                <div key={order._id} style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                <div key={order._id} style={{ background: 'rgba(0,0,0,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
                     <span>#{order._id.substring(18)}</span>
                     <span>{order.diningOption} {order.tableNumber ? `(T-${order.tableNumber})` : ''}</span>
@@ -308,7 +308,7 @@ function AdminDashboard() {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {orders.filter(o => o.status === 'Ready').map(order => (
-                <div key={order._id} style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
+                <div key={order._id} style={{ background: 'rgba(0,0,0,0.02)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
                     <span>#{order._id.substring(18)}</span>
                     <span>{order.diningOption} {order.tableNumber ? `(T-${order.tableNumber})` : ''}</span>
@@ -417,7 +417,7 @@ function AdminDashboard() {
                 <label className="form-label" style={{ fontSize: '0.75rem' }}>Category</label>
                 <select
                   className="form-control"
-                  style={{ padding: '0.5rem', background: '#111827' }}
+                  style={{ padding: '0.5rem', background: 'var(--bg-main)' }}
                   value={menuForm.category}
                   onChange={(e) => setMenuForm({ ...menuForm, category: e.target.value })}
                 >
