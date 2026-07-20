@@ -39,7 +39,7 @@ jobs:
 
       - name: Deploy Frontend to S3 Bucket
         run: |
-          aws s3 sync frontend/dist/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
+          aws s3 sync frontend/dist/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --delete
 
   # Job 2: Build, Push Docker Image, and Deploy Express Backend to Ubuntu VM
   backend-deploy:
@@ -67,7 +67,7 @@ jobs:
       - name: Deploy to Ubuntu VM via SSH
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.VM_IP }}
+          host: ${{ secrets.BACKEND_IP }}
           username: ${{ secrets.VM_USERNAME }}
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
