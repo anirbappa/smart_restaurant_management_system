@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - arya
 
 jobs:
   # Job 1: Build, Test, and Deploy React Frontend to AWS S3
