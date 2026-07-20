@@ -40,7 +40,7 @@ function Home() {
             fontWeight: '800',
             lineHeight: '1.1',
             letterSpacing: '-0.02em',
-            background: 'linear-gradient(135deg, #fff 30%, #f59e0b 100%)',
+            background: 'linear-gradient(135deg, var(--text-main) 30%, var(--color-primary) 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
           }}>

@@ -116,7 +116,7 @@ function Register() {
               </span>
               <select
                 className="form-control"
-                style={{ paddingLeft: '2.5rem', background: '#111827' }}
+                style={{ paddingLeft: '2.5rem', background: 'var(--bg-main)' }}
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
               >

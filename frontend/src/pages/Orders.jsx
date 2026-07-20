@@ -123,7 +123,7 @@ function Orders() {
                               width: '28px',
                               height: '28px',
                               borderRadius: '50%',
-                              background: isDone ? 'var(--color-success)' : '#1f2937',
+                              background: isDone ? 'var(--color-success)' : 'var(--bg-main)',
                               color: isDone ? 'var(--text-dark)' : 'var(--text-muted)',
                               border: isActive ? '2px solid var(--color-primary)' : '1px solid var(--border-color)',
                               display: 'flex',
@@ -166,7 +166,7 @@ function Orders() {
                     <div style={{
                       marginTop: '0.5rem',
                       padding: '0.75rem',
-                      background: 'rgba(255,255,255,0.02)',
+                      background: 'rgba(0, 0, 0, 0.02)',
                       borderRadius: '4px',
                       fontSize: '0.8rem',
                       borderLeft: '2px solid var(--color-primary)',

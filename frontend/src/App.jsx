@@ -129,7 +129,7 @@ function App() {
         borderTop: '1px solid var(--border-color)',
         fontSize: '0.875rem',
         color: 'var(--text-muted)',
-        background: 'rgba(9, 13, 22, 0.5)'
+        background: 'var(--bg-card)'
       }}>
         <p>&copy; {new Date().getFullYear()} GustoSmart Restaurant Management System. All rights reserved.</p>
       </footer>

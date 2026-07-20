@@ -109,7 +109,7 @@ function Menu() {
               onClick={() => handleCategoryChange(cat)}
               className="btn"
               style={{
-                background: selectedCategory === cat ? 'var(--color-primary)' : 'rgba(255, 255, 255, 0.03)',
+                background: selectedCategory === cat ? 'var(--color-primary)' : 'rgba(0, 0, 0, 0.03)',
                 color: selectedCategory === cat ? 'var(--text-dark)' : 'var(--text-main)',
                 border: selectedCategory === cat ? 'none' : '1px solid var(--border-color)',
                 borderRadius: '30px',
@@ -232,14 +232,14 @@ function Menu() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <button
                       onClick={() => dispatch(updateQuantity({ id: item.menuItem, quantity: item.quantity - 1 }))}
-                      style={{ background: 'rgba(255,255,255,0.05)', border: 'none', color: 'white', cursor: 'pointer', padding: '2px', borderRadius: '4px' }}
+                      style={{ background: 'rgba(0,0,0,0.05)', border: 'none', color: 'var(--text-main)', cursor: 'pointer', padding: '2px', borderRadius: '4px' }}
                     >
                       <Minus size={14} />
                     </button>
                     <span style={{ fontSize: '0.9rem', width: '16px', textAlign: 'center' }}>{item.quantity}</span>
                     <button
                       onClick={() => dispatch(updateQuantity({ id: item.menuItem, quantity: item.quantity + 1 }))}
-                      style={{ background: 'rgba(255,255,255,0.05)', border: 'none', color: 'white', cursor: 'pointer', padding: '2px', borderRadius: '4px' }}
+                      style={{ background: 'rgba(0,0,0,0.05)', border: 'none', color: 'var(--text-main)', cursor: 'pointer', padding: '2px', borderRadius: '4px' }}
                     >
                       <Plus size={14} />
                     </button>
@@ -265,8 +265,8 @@ function Menu() {
                       flex: 1,
                       padding: '6px',
                       fontSize: '0.75rem',
-                      background: cart.diningOption === opt ? 'var(--color-primary)' : 'rgba(255,255,255,0.03)',
-                      color: cart.diningOption === opt ? 'var(--text-dark)' : 'white',
+                      background: cart.diningOption === opt ? 'var(--color-primary)' : 'rgba(0,0,0,0.03)',
+                      color: cart.diningOption === opt ? 'var(--text-dark)' : 'var(--text-main)',
                       border: '1px solid var(--border-color)',
                       borderRadius: '4px',
                       cursor: 'pointer',
